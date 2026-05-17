@@ -48,3 +48,4 @@ Response format: `[[[translated_text, original, ...], ...], ...]` — text is at
 - Started as a plain hello world (C++20, CMake)
 - Added online translation via MyMemory API
 - Switched to Google Translate endpoint after MyMemory returned incorrect results (Persian for `fr`)
+- Added "collaborated" human-input badge to README (2026-05-18); from [keith-dev/badges-repo](https://github.com/keith-dev/badges-repo)

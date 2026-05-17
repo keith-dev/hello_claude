@@ -1,5 +1,7 @@
 # hello_claude
 
+![human input: collaborated](https://raw.githubusercontent.com/keith-dev/badges-repo/master/badge-collaborated.svg)
+
 Translates "Hello World" into any language using the Google Translate API.
 
 ## Usage
