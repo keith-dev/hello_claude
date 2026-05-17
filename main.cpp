@@ -1,7 +1,7 @@
-#include <iostream>
-#include <string>
-#include <curl/curl.h>
 #include <nlohmann/json.hpp>
+#include <curl/curl.h>
+#include <string>
+#include <iostream>
 
 static size_t write_cb(char* ptr, size_t size, size_t nmemb, std::string* data) {
     data->append(ptr, size * nmemb);
@@ -42,6 +42,4 @@ int main(int argc, char* argv[]) {
     // Response format: [[[translated, original, ...],...], ...]
     auto json = nlohmann::json::parse(response);
     std::cout << json[0][0][0].get<std::string>() << "\n";
-
-    return 0;
 }

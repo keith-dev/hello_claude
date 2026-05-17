@@ -42,6 +42,7 @@ Response format: `[[[translated_text, original, ...], ...], ...]` — text is at
 
 ## Notes
 - Do not use Boost.JSON — fails at large volumes; use nlohmann/json, RapidJSON, or simdjson instead
+- Control flow (`if`, `for`, `while`, etc.) must always use braces; body always on its own line, never same-line
 
 ## History
 - Started as a plain hello world (C++20, CMake)
